@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerLogic : MonoBehaviour
 {
     Rigidbody2D rb;
+    SpriteRenderer sr;
+    Animator anim;
     public bool isOnGround;
     float jumpHorizontal;
     float jumpVertical;
@@ -16,6 +18,8 @@ public class PlayerLogic : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
 
         facing = Direction.Right;
         jumpHorizontal = 4.0f;
@@ -30,10 +34,13 @@ public class PlayerLogic : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) && isOnGround && facing == Direction.Right)
         {
             facing = Direction.Left;
+            sr.flipX = true;
+
         }
         else if (Input.GetKeyDown(KeyCode.D) && isOnGround && facing == Direction.Left)
         {
             facing = Direction.Right;
+            sr.flipX = false;
         }
 
         // Jump Logic
@@ -43,14 +50,15 @@ public class PlayerLogic : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            jumpStrength = 0.1f;
+            jumpStrength = 0.4f;
         }
         else if (Input.GetKey(KeyCode.Space) && jumpStrength < 1)
         {
             jumpStrength += Time.deltaTime;
         }
 
-
+        // Update Animation
+        anim.SetFloat("Vertical Speed", rb.velocity.y);
     }
 
     void Jump()
@@ -71,6 +79,7 @@ public class PlayerLogic : MonoBehaviour
         if (other.CompareTag("Terrain"))
         {
             isOnGround = true;
+            anim.SetBool("Is on Ground", isOnGround);
         }
     }
     void OnTriggerStay2D(Collider2D other) { }
@@ -79,6 +88,7 @@ public class PlayerLogic : MonoBehaviour
         if (other.CompareTag("Terrain"))
         {
             isOnGround = false;
+            anim.SetBool("Is on Ground", isOnGround);
         }
     }
 
