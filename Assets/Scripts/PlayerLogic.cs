@@ -44,17 +44,20 @@ public class PlayerLogic : MonoBehaviour
         }
 
         // Jump Logic
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (isOnGround)
         {
-            Jump();
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            jumpStrength = 0.4f;
-        }
-        else if (Input.GetKey(KeyCode.Space) && jumpStrength < 1)
-        {
-            jumpStrength += Time.deltaTime;
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                Jump();
+            }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                jumpStrength = 0.4f;
+            }
+            else if (Input.GetKey(KeyCode.Space) && jumpStrength < 1)
+            {
+                jumpStrength += Time.deltaTime;
+            }
         }
 
         // Update Animation
