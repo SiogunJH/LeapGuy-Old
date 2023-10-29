@@ -22,9 +22,12 @@ public class PlayerLogic : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
 
         facing = Direction.Right;
-        jumpHorizontal = 4.0f;
-        jumpVertical = 9.0f;
+        jumpHorizontal = 6.5f;
+        jumpVertical = 14.0f;
+        jumpStrength = 0.1f;
         isOnGround = true;
+
+        Physics2D.gravity = new Vector2(0.00f, -20.00f);
     }
 
     // Update is called once per frame
@@ -46,15 +49,12 @@ public class PlayerLogic : MonoBehaviour
         // Jump Logic
         if (isOnGround)
         {
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space) || jumpStrength > 1)
             {
                 Jump();
+                jumpStrength = 0.1f;
             }
-            else if (Input.GetKeyDown(KeyCode.Space))
-            {
-                jumpStrength = 0.4f;
-            }
-            else if (Input.GetKey(KeyCode.Space) && jumpStrength < 1)
+            else if (Input.GetKey(KeyCode.Space))
             {
                 jumpStrength += Time.deltaTime;
             }
@@ -77,27 +77,27 @@ public class PlayerLogic : MonoBehaviour
     }
 
     // On Triggers
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other) { }
+    void OnTriggerStay2D(Collider2D other) { }
+    void OnTriggerExit2D(Collider2D other) { }
+
+    // On Collisions
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Terrain"))
+        if (collision.gameObject.CompareTag("Standable"))
         {
             isOnGround = true;
             anim.SetBool("Is on Ground", isOnGround);
         }
     }
-    void OnTriggerStay2D(Collider2D other) { }
-    void OnTriggerExit2D(Collider2D other)
+    void OnCollisionStay2D(Collision2D collision) { }
+    void OnCollisionExit2D(Collision2D collision)
     {
-        if (other.CompareTag("Terrain"))
+        if (collision.gameObject.CompareTag("Standable"))
         {
             isOnGround = false;
             anim.SetBool("Is on Ground", isOnGround);
         }
     }
-
-    // On Collisions
-    void OnCollisionEnter2D(Collision2D collision) { }
-    void OnCollisionStay2D(Collision2D collision) { }
-    void OnCollisionExit2D(Collision2D collision) { }
 
 }
