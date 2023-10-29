@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Terrain
   - Standable
   - Decors
+  - Bounceable
   layers:
   - Default
   - TransparentFX
