@@ -103,7 +103,14 @@ public class PlayerLogic : MonoBehaviour
             }
         }
     }
-    void OnCollisionStay2D(Collision2D collision) { }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Standable") && !isOnGround && rb.velocity.magnitude < 0.01f)
+        {
+            isOnGround = true;
+            anim.SetBool("Is on Ground", isOnGround);
+        }
+    }
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Standable"))
