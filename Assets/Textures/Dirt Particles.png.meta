@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5908e615e1a4e11429f2f5e4019b58f9
+guid: a342082aca8750a44a9dfcbaaac48c62
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,34 +136,118 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fall_0
+      name: Dirt Particles_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 16
-        width: 24
-        height: 24
+        x: 1
+        y: 1
+        width: 7
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e62012c64be30a241a6a6014ed54784b
-      internalID: -432854015
+      spriteID: 54565bab5d3f10d4e9179207a3623aa1
+      internalID: -192615512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_1
+      name: Dirt Particles_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 16
-        width: 24
-        height: 24
+        x: 11
+        y: 1
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41f45533a41f904d92ce177098aa2a1
+      internalID: -1235029498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Particles_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65bc2a9f92dc9147963bda0dd16ecdc
+      internalID: -1859856382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Particles_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 2
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d42f9b37c2a9de41a13cff6b2248ca1
+      internalID: 1740326076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Particles_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938ecdbfa836fc54280f95317bddc8ab
+      internalID: 1102026138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Particles_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 4
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e485a0d377f5eb34d972ca1b5a769ee9
-      internalID: -1541268235
+      spriteID: 5953e61232634ef4790c7aa8f55949dd
+      internalID: 26224294
       vertices: []
       indices: 
       edges: []
@@ -188,8 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fall_0: -432854015
-      Fall_1: -1541268235
+      Dirt Particles_0: -192615512
+      Dirt Particles_1: -1235029498
+      Dirt Particles_2: -1859856382
+      Dirt Particles_3: 1740326076
+      Dirt Particles_4: 1102026138
+      Dirt Particles_5: 26224294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

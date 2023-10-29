@@ -16,6 +16,6 @@ public class CameraLogic : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(0, playerGO.transform.position.y + 1.35f, -1);
+        transform.position = new Vector3(0, playerGO.transform.position.y + 1.0f, -1);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -8,6 +9,8 @@ public class PlayerLogic : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
+    public GameObject particleGO;
+    ParticleSystem ps;
     public bool isOnGround;
     float jumpHorizontal;
     float jumpVertical;
@@ -20,6 +23,7 @@ public class PlayerLogic : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        ps = particleGO.GetComponent<ParticleSystem>();
 
         facing = Direction.Right;
         jumpHorizontal = 6.5f;
@@ -84,10 +88,19 @@ public class PlayerLogic : MonoBehaviour
     // On Collisions
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Standable"))
+        // When the player hits the Standable object and stops moving
+        if (collision.gameObject.CompareTag("Standable") && rb.velocity.magnitude < 0.01)
         {
+            // Set "Is on Ground"
             isOnGround = true;
             anim.SetBool("Is on Ground", isOnGround);
+
+            // Apply actions below only when player hits the Standable with 10+ velcity
+            if (collision.relativeVelocity.y > 10)
+            {
+                particleGO.transform.position = new Vector2(transform.position.x, transform.position.y - 0.6f);
+                ps.Play();
+            }
         }
     }
     void OnCollisionStay2D(Collision2D collision) { }
