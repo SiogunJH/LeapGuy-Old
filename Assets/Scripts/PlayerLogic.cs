@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+using AudioManagerLib;
+
 public class PlayerLogic : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
     [SerializeField] GameObject particleGO;
-    [SerializeField] AudioClip[] softLandingAudio;
-    [SerializeField] AudioClip[] hardLandingAudio;
-    [SerializeField] AudioClip[] wallBonkAudio;
-    [SerializeField] AudioClip[] jumpAudio;
-    AudioSource audioSource;
     ParticleSystem ps;
     bool isOnGround;
     float jumpHorizontal;
@@ -27,7 +24,6 @@ public class PlayerLogic : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         ps = particleGO.GetComponent<ParticleSystem>();
-        audioSource = GetComponent<AudioSource>();
 
         facing = Direction.Right;
         jumpHorizontal = 6.5f;
@@ -95,8 +91,7 @@ public class PlayerLogic : MonoBehaviour
         }
 
         // Play jump sound
-        audioSource.clip = jumpAudio[Random.Range(0, jumpAudio.Length)];
-        audioSource.Play();
+        AudioManager.PlaySound("Jump");
     }
 
     // Set isOnGround and update animation variable
@@ -113,22 +108,19 @@ public class PlayerLogic : MonoBehaviour
             ps.Play();
 
             // Play hard landing sound
-            audioSource.clip = hardLandingAudio[Random.Range(0, hardLandingAudio.Length)];
-            audioSource.Play();
+            AudioManager.PlaySound("Hard Landing");
         }
         else
         {
             // Play soft landing sound
-            audioSource.clip = softLandingAudio[Random.Range(0, softLandingAudio.Length)];
-            audioSource.Play();
+            AudioManager.PlaySound("Soft Landing");
         }
     }
 
     void OnBounce()
     {
         // Play wall bonk sound
-        audioSource.clip = wallBonkAudio[Random.Range(0, wallBonkAudio.Length)];
-        audioSource.Play();
+        AudioManager.PlaySound("Wall Bonk");
     }
 
     // On Triggers
