@@ -10881,7 +10881,7 @@ GameObject:
   - component: {fileID: 2009058914}
   - component: {fileID: 2009058913}
   m_Layer: 0
-  m_Name: Bonk
+  m_Name: Wall Bonk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
