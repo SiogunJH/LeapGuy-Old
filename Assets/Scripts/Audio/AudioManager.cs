@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 namespace AudioManagerLib
@@ -8,10 +9,30 @@ namespace AudioManagerLib
     public class AudioManager : MonoBehaviour
     {
         [SerializeField] static Dictionary<string, AudioPlayer> audioPlayer;
+        private static AudioManager Instance { get; set; }
 
         private void Awake()
         {
+            // Dont destroy on load
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            // On time functions
             CreateAudioDictionary();
+        }
+        private void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+        private void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+        public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (scene.name.StartsWith("Level "))
+            {
+                PlaySound("Level Theme");
+            }
         }
 
         void CreateAudioDictionary()

@@ -5,12 +5,7 @@ using UnityEngine;
 public class AudioPlayer : MonoBehaviour
 {
     [SerializeField] AudioClip[] audioClipsPool;
-    AudioSource audioSource;
-    void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
+    [SerializeField] AudioSource audioSource;
     public void PlaySound()
     {
         audioSource.clip = audioClipsPool[Random.Range(0, audioClipsPool.Length)];
