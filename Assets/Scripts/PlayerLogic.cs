@@ -94,7 +94,7 @@ public class PlayerLogic : MonoBehaviour
         AudioManager.PlaySound("Jump");
     }
 
-    // Set isOnGround and update animation variable
+    // Actions to do on landing
     void OnLanding(bool isLandingSoft)
     {
         // Set "Is on Ground"
@@ -117,6 +117,7 @@ public class PlayerLogic : MonoBehaviour
         }
     }
 
+    // Actions to do on bonking your stupid fookin head on a wall
     void OnBounce()
     {
         // Play wall bonk sound

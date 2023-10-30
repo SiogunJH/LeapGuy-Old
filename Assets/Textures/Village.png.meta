@@ -1690,13 +1690,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone2
+      name: Stone2b
       rect:
         serializedVersion: 2
-        x: 176
+        x: 192
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1711,13 +1711,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone1
+      name: Stone1b
       rect:
         serializedVersion: 2
-        x: 144
+        x: 160
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1732,13 +1732,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone3
+      name: Stone3b
       rect:
         serializedVersion: 2
-        x: 208
+        x: 224
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1753,13 +1753,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone4
+      name: Stone4b
       rect:
         serializedVersion: 2
-        x: 240
+        x: 256
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1774,13 +1774,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone5
+      name: Stone5b
       rect:
         serializedVersion: 2
-        x: 272
+        x: 288
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1795,13 +1795,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone6
+      name: Stone6b
       rect:
         serializedVersion: 2
-        x: 304
+        x: 320
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1816,13 +1816,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant1
+      name: Stone7b
       rect:
         serializedVersion: 2
-        x: 336
+        x: 352
         y: 144
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2004,6 +2004,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Stone1a
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1792074a595f942b9f690c00bef770
+      internalID: -396494782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone2a
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e320ee5a76900d4b85e17279dcc92f9
+      internalID: -1985024682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone3a
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ae1c3f0de594743b53a791787329ec
+      internalID: 536680843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone4a
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc993d423bef67344aea4de2f1c270b3
+      internalID: -1892058021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone5a
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943ef3ad2a73ad84e945ade208e91287
+      internalID: -1508187343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone6a
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2afc33afbffb624494c33f4836c299e
+      internalID: 782771168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone6c
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fd185cc7646a14d9892f29e23a6660
+      internalID: -1478792781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone7a
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a71e14abb68fbe4ca9a0c357aa3867c
+      internalID: 787936711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2020,90 +2188,98 @@ TextureImporter:
       Background3: 1096680104
       Background4: -1042382002
       Background5: -44259460
-      Plant1: -677210768
       Plant2: 1637868511
       Plant3: 2018053615
       Plant4: -400365580
       Plant5: -116768579
-      Stone1: 1746087828
-      Stone2: -2145294881
-      Stone3: -1019068024
-      Stone4: 539778625
-      Stone5: -1492854174
-      Stone6: 1729978713
-      Table1: 1652771774
-      Table2: 1074053915
-      TileBackGround1: -1208120647
-      TileBackGround10: 1944438842
-      TileBackGround11: 769105267
-      TileBackGround12: -1734095765
-      TileBackGround13: -1872998437
-      TileBackGround2: -1746372180
-      TileBackGround3: 1918327960
-      TileBackGround4: -786457429
-      TileBackGround5: -1916031187
-      TileBackGround6: 162031014
-      TileBackGround7: 1521889818
-      TileBackGround8: -303487647
-      TileBackGround9: -979371680
-      TileFence1: -2063355609
-      TileFence2: 1627972409
-      TileFence3: -1896481790
-      TileFence4: 1043207387
-      TileFence5: 1952543706
-      TileFence6: -454810601
-      TileGround1: 372390009
-      TileGround10: -712913760
-      TileGround11: -337102267
-      TileGround12: -1631878210
-      TileGround13: -265388907
-      TileGround14: 1773016589
-      TileGround15: 1526828268
-      TileGround16: -1795069885
-      TileGround17: 1746422869
-      TileGround18: 747311438
-      TileGround19: 1149072864
-      TileGround2: -1766307359
-      TileGround20: 330263017
-      TileGround21: -1724452651
-      TileGround22: -839192656
-      TileGround23: 2097316097
-      TileGround24: -1201171171
-      TileGround25: 1314895785
-      TileGround26: 1117495425
-      TileGround27: 480975961
-      TileGround28: -2012131973
-      TileGround29: 2021935202
-      TileGround3: 1809391310
-      TileGround30: -1265956905
-      TileGround31: 1890530403
-      TileGround4: -1493193376
-      TileGround5: -1727392612
-      TileGround6: 1121040729
-      TileGround7: -1122151221
-      TileGround8: 722760899
-      TileGround9: -836504486
-      TilePlant1: -350269101
-      TilePlant10: -904001968
-      TilePlant11: 362551460
-      TilePlant12: -890148158
-      TilePlant2: 1253071671
-      TilePlant3: -1301984742
-      TilePlant4: 1463314744
-      TilePlant5: -1148973739
-      TilePlant6: -126665124
-      TilePlant7: -1551513061
-      TilePlant8: 1713858212
-      TilePlant9: -1603182679
-      TileSpikes: -762311695
-      Tree1: 1979880157
-      Tree2: 1348864781
-      Tree3: -731673611
-      Tree4: 744591045
-      Tree5: -204582528
-      Tree6: 1892446599
-      Tree7: -1897294959
-      Tree8: -1485331619
+      Stone1a: 1746087828
+      Stone1b: -1985024682
+      Stone2a: -2145294881
+      Stone2b: 536680843
+      Stone3a: -1019068024
+      Stone3b: -1019068024
+      Stone4a: -1892058021
+      Stone4b: 539778625
+      Stone5a: -1508187343
+      Stone5b: -1492854174
+      Stone6a: 782771168
+      Stone6b: 1729978713
+      Stone6c: -1478792781
+      Stone7a: 787936711
+      Stone7b: -677210768
+      Table1: 1074053915
+      Table2: -1208120647
+      TileBackGround1: 1944438842
+      TileBackGround10: 769105267
+      TileBackGround11: -1734095765
+      TileBackGround12: -1872998437
+      TileBackGround13: -1746372180
+      TileBackGround2: 1918327960
+      TileBackGround3: -786457429
+      TileBackGround4: -1916031187
+      TileBackGround5: 162031014
+      TileBackGround6: 1521889818
+      TileBackGround7: -303487647
+      TileBackGround8: -979371680
+      TileBackGround9: -2063355609
+      TileFence1: 1627972409
+      TileFence2: -1896481790
+      TileFence3: 1043207387
+      TileFence4: 1952543706
+      TileFence5: -454810601
+      TileFence6: 372390009
+      TileGround1: -712913760
+      TileGround10: -337102267
+      TileGround11: -1631878210
+      TileGround12: -265388907
+      TileGround13: 1773016589
+      TileGround14: 1526828268
+      TileGround15: -1795069885
+      TileGround16: 1746422869
+      TileGround17: 747311438
+      TileGround18: 1149072864
+      TileGround19: -1766307359
+      TileGround2: 330263017
+      TileGround20: -1724452651
+      TileGround21: -839192656
+      TileGround22: 2097316097
+      TileGround23: -1201171171
+      TileGround24: 1314895785
+      TileGround25: 1117495425
+      TileGround26: 480975961
+      TileGround27: -2012131973
+      TileGround28: 2021935202
+      TileGround29: 1809391310
+      TileGround3: -1265956905
+      TileGround30: 1890530403
+      TileGround31: -1493193376
+      TileGround4: -1727392612
+      TileGround5: 1121040729
+      TileGround6: -1122151221
+      TileGround7: 722760899
+      TileGround8: -836504486
+      TileGround9: -350269101
+      TilePlant1: -904001968
+      TilePlant10: 362551460
+      TilePlant11: -890148158
+      TilePlant12: 1253071671
+      TilePlant2: -1301984742
+      TilePlant3: 1463314744
+      TilePlant4: -1148973739
+      TilePlant5: -126665124
+      TilePlant6: -1551513061
+      TilePlant7: 1713858212
+      TilePlant8: -1603182679
+      TilePlant9: -762311695
+      TileSpikes: 1979880157
+      Tree1: 1348864781
+      Tree2: -731673611
+      Tree3: 744591045
+      Tree4: -204582528
+      Tree5: 1892446599
+      Tree6: -1897294959
+      Tree7: -1485331619
+      Tree8: -1892058021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
