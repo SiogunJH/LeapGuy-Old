@@ -125,7 +125,14 @@ public class PlayerLogic : MonoBehaviour
     }
 
     // On Triggers
-    void OnTriggerEnter2D(Collider2D other) { }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Finish"))
+        {
+            Debug.LogWarning("TODO Level finished");
+            UiLogic.LoadNextLevel();
+        }
+    }
     void OnTriggerStay2D(Collider2D other) { }
     void OnTriggerExit2D(Collider2D other) { }
 

@@ -9,6 +9,11 @@ public class UiLogic : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public static void LoadNextLevel()
+    {
+        Debug.LogWarning("TODO: Load next level");
+        LoadScene("Main Menu");
+    }
     public static void LoadLatestLevel()
     {
         Debug.LogWarning("TODO: Load latest level");

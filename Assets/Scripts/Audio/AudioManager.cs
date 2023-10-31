@@ -9,20 +9,8 @@ namespace AudioManagerLib
     public class AudioManager : MonoBehaviour
     {
         [SerializeField] static Dictionary<string, AudioPlayer> audioPlayer;
-        private static AudioManager Instance { get; set; }
-
         private void Awake()
         {
-            // Dont destroy on load
-            // if (Instance != null && Instance != this)
-            // {
-            //     Destroy(gameObject);
-            //     return;
-            // }
-            // Instance = this;
-            //DontDestroyOnLoad(gameObject);
-
-            // On time functions
             CreateAudioDictionary();
         }
         private void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
