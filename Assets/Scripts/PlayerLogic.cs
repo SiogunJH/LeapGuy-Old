@@ -132,7 +132,7 @@ public class PlayerLogic : MonoBehaviour
     // On Collisions
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Standable") && rb.velocity.magnitude < 0.01)
+        if (collision.gameObject.CompareTag("Standable") && !isOnGround && rb.velocity.magnitude < 0.01)
         {
             OnLanding(collision.relativeVelocity.y < 10);
         }
@@ -145,7 +145,7 @@ public class PlayerLogic : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Standable") && !isOnGround && rb.velocity.magnitude < 0.01f)
         {
-            OnLanding(false);
+            OnLanding(true);
         }
     }
     void OnCollisionExit2D(Collision2D collision)
