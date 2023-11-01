@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraLogic : MonoBehaviour
 {
     public GameObject playerGO;
-    const float cameraSpeed = 3.75f;
+    const float cameraSpeed = 4.5f;
     const float verticalFieldOfView = 6.0f;
 
     // Update is called once per frame
