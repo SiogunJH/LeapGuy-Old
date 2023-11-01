@@ -11232,7 +11232,7 @@ GameObject:
   - component: {fileID: 1161447497}
   - component: {fileID: 1161447496}
   m_Layer: 0
-  m_Name: In the Distance
+  m_Name: Very Far Behind
   m_TagString: Decors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
