@@ -2298,6 +2298,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Animated Grass A
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82f7d7b108b18740bb2b792bce5980d
+      internalID: -1081209083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated Grass B
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808697688d1a4014db39d7279400c792
+      internalID: 1442373920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated Grass C
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5444004c7c46843a24272d3af7aa03
+      internalID: 386354587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2309,6 +2372,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Animated Grass A: -1081209083
+      Animated Grass B: 1442373920
+      Animated Grass C: 386354587
       Background1: -483385287
       Background2: 1487765377
       Background3: -1030166557
@@ -2324,13 +2390,13 @@ TextureImporter:
       Plains_11: -564359119
       Plains_2: -1105316993
       Plains_3: 1116575324
-      Plains_4: -223595551
-      Plains_5: 2078922412
-      Plains_6: -2129220769
       Plains_7: 1444920398
       Plains_8: 2131210174
       Plains_9: 1176994244
       Pointer: 1084520013
+      Purple Double Flower A: -223595551
+      Purple Double Flower B: 2078922412
+      Purple Double Flower C: -2129220769
       Scarecrow: -1649204338
       Stone1: -75292869
       Stone2: -1218938483

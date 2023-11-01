@@ -136,263 +136,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Hitbox_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 14}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-      physicsShape:
-      - - {x: -16, y: 14}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-      tessellationDetail: 1
-      bones: []
-      spriteID: dd40b8022424a9e4e8a2230b2678c5db
-      internalID: 954460703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_1
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 72
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 14}
-      physicsShape:
-      - - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 14}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ef1d06bc047de34d900fd1060f3f672
-      internalID: -2102685992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 72
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -1}
-        - {x: -16, y: 14}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 14}
-      physicsShape:
-      - - {x: 0, y: -1}
-        - {x: -16, y: 14}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 14}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c532fa8bcd11cfe41afdc88282f04251
-      internalID: -136802443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_3
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 72
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50eeb434e6e2f5041b4078e88d4308f2
-      internalID: -1194734734
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 36
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38fe150c351fc3349910d1a4e7e66770
-      internalID: -508382553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_5
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 36
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65c90004a34aa864aa507de2731993c8
-      internalID: 421718673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_6
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 36
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 140cc4c50f78b1f44906e641400ec03d
-      internalID: -701500115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_7
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 36
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 718af74ed7e378646a5be35d2765ec63
-      internalID: 806771050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 257c3434e7e8ef342902f52bc132eaad
-      internalID: -1354687806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_9
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6366e9e0d8d10f34181ade1494d3cf54
-      internalID: -1821210665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Hitbox_10
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f891817b034314f97d2f4bd733f18f
-      internalID: -406715749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Hitbox_0
       rect:
         serializedVersion: 2
-        x: 144
+        x: 0
         y: 72
         width: 32
         height: 32
@@ -413,8 +160,8 @@ TextureImporter:
       name: Hitbox_1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 36
+        x: 36
+        y: 72
         width: 32
         height: 32
       alignment: 0
@@ -426,6 +173,279 @@ TextureImporter:
       bones: []
       spriteID: 0331835e4bfbaf4499dc1e3dfea12077
       internalID: 1177893862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debcada02bc0f064190d1506a638c40a
+      internalID: 552477052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f467fd209255054ca429cbfbf6405b9
+      internalID: 914602845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2387ebced716d6542a7ed66fa1d03bb8
+      internalID: 1057965839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0477a4f7f28b8f84bbb972ba762fa45b
+      internalID: 804666079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fdf5f940b44f34dac04e947ff7c4e3
+      internalID: -368704005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6583b1384ffe451469a906381afd72e2
+      internalID: -1596129275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed9639cc4312634595af9ae2200d8bc
+      internalID: 540221381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d2a07ccdd291448b9d3a6919f61a83
+      internalID: 434475586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb590e0de6556b47ab138ec3bf54c66
+      internalID: -1687403549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cf8d06a73d9884d9a5692013406b46
+      internalID: 1535264409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14fa86136570f8469b93e93746726fa
+      internalID: -1440456024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe32f8006fe9aa4694e1b189955db6a
+      internalID: 1763241917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hitbox_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e03a9087ee05b04db24194370a71527
+      internalID: -331206975
       vertices: []
       indices: 
       edges: []
@@ -443,17 +463,19 @@ TextureImporter:
     nameFileIdTable:
       Hitbox_0: 429540888
       Hitbox_1: 1177893862
-      TX Hitbox_0: 954460703
-      TX Hitbox_1: -2102685992
-      TX Hitbox_10: -406715749
-      TX Hitbox_2: -136802443
-      TX Hitbox_3: -1194734734
-      TX Hitbox_4: -508382553
-      TX Hitbox_5: 421718673
-      TX Hitbox_6: -701500115
-      TX Hitbox_7: 806771050
-      TX Hitbox_8: -1354687806
-      TX Hitbox_9: -1821210665
+      Hitbox_10: -1687403549
+      Hitbox_11: 1535264409
+      Hitbox_12: -1440456024
+      Hitbox_13: 1763241917
+      Hitbox_14: -331206975
+      Hitbox_2: 552477052
+      Hitbox_3: 914602845
+      Hitbox_4: 1057965839
+      Hitbox_5: 804666079
+      Hitbox_6: -368704005
+      Hitbox_7: -1596129275
+      Hitbox_8: 540221381
+      Hitbox_9: 434475586
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
