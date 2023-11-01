@@ -10,8 +10,10 @@ public class PlayerLogic : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
-    [SerializeField] GameObject particleGO;
-    ParticleSystem ps;
+    [SerializeField] GameObject dirtSplashGO;
+    [SerializeField] GameObject goldenFountainGO;
+    ParticleSystem dirtSplash;
+    ParticleSystem goldenFountain;
     bool isOnGround;
     bool hasFinished;
     float jumpHorizontal;
@@ -24,7 +26,8 @@ public class PlayerLogic : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        ps = particleGO.GetComponent<ParticleSystem>();
+        dirtSplash = dirtSplashGO.GetComponent<ParticleSystem>();
+        goldenFountain = goldenFountainGO.GetComponent<ParticleSystem>();
 
         facing = Direction.Right;
         jumpHorizontal = 6.5f;
@@ -106,8 +109,8 @@ public class PlayerLogic : MonoBehaviour
         if (!isLandingSoft)
         {
             // Generate particles
-            particleGO.transform.position = new Vector2(transform.position.x, transform.position.y - 0.6f);
-            ps.Play();
+            dirtSplashGO.transform.position = new Vector2(transform.position.x, transform.position.y - 0.6f);
+            dirtSplash.Play();
 
             // Play hard landing sound
             AudioManager.PlaySound("Hard Landing");
@@ -136,15 +139,22 @@ public class PlayerLogic : MonoBehaviour
     }
 
     // On Triggers
-    void OnTriggerEnter2D(Collider2D other)
-    {
-
-    }
+    void OnTriggerEnter2D(Collider2D other) { }
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Finish") && isOnGround && !hasFinished)
         {
+            // Prevent looping
             hasFinished = true;
+
+            // Generate particles
+            goldenFountainGO.transform.position = new Vector2(transform.position.x, transform.position.y - 0.6f);
+            goldenFountain.Play();
+
+            // Play sound
+            AudioManager.PlaySound("Finish Dingle");
+
+            // Load new level in 2 seconds
             Invoke("OnFinish", 2);
         }
     }
