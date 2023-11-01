@@ -7,9 +7,7 @@ using AudioManagerLib;
 
 public class PlayerLogic : MonoBehaviour
 {
-    Rigidbody2D rb;
-    SpriteRenderer sr;
-    Animator anim;
+    [Header("Particle Systems\n")]
     [SerializeField] GameObject dirtSplashGO;
     [SerializeField] GameObject goldenFountainGO;
     ParticleSystem dirtSplash;
@@ -20,6 +18,9 @@ public class PlayerLogic : MonoBehaviour
     float jumpVertical;
     float jumpStrength;
     Direction facing;
+    Rigidbody2D rb;
+    SpriteRenderer sr;
+    Animator anim;
 
     void Start()
     {
