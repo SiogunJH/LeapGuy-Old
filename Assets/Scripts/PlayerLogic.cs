@@ -13,6 +13,7 @@ public class PlayerLogic : MonoBehaviour
     [SerializeField] GameObject particleGO;
     ParticleSystem ps;
     bool isOnGround;
+    bool hasFinished;
     float jumpHorizontal;
     float jumpVertical;
     float jumpStrength;
@@ -30,6 +31,7 @@ public class PlayerLogic : MonoBehaviour
         jumpVertical = 14.0f;
         jumpStrength = 0.1f;
         isOnGround = true;
+        hasFinished = false;
 
         Physics2D.gravity = new Vector2(0.00f, -20.00f);
     }
@@ -128,17 +130,24 @@ public class PlayerLogic : MonoBehaviour
     {
         AudioManager.PlaySound("Slide");
     }
+    void OnFinish()
+    {
+        UiLogic.LoadNextLevel();
+    }
 
     // On Triggers
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Finish"))
+
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Finish") && isOnGround && !hasFinished)
         {
-            Debug.LogWarning("TODO Level finished");
-            UiLogic.LoadNextLevel();
+            hasFinished = true;
+            Invoke("OnFinish", 2);
         }
     }
-    void OnTriggerStay2D(Collider2D other) { }
     void OnTriggerExit2D(Collider2D other) { }
 
     // On Collisions
