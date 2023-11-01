@@ -124,6 +124,11 @@ public class PlayerLogic : MonoBehaviour
         AudioManager.PlaySound("Wall Bonk");
     }
 
+    void OnSlide()
+    {
+        AudioManager.PlaySound("Slide");
+    }
+
     // On Triggers
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -146,6 +151,10 @@ public class PlayerLogic : MonoBehaviour
         else if (collision.gameObject.CompareTag("Bounceable"))
         {
             OnBounce();
+        }
+        else if (collision.gameObject.CompareTag("Slideable"))
+        {
+            OnSlide();
         }
     }
     void OnCollisionStay2D(Collision2D collision)

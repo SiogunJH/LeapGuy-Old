@@ -11,8 +11,24 @@ public class UiLogic : MonoBehaviour
     }
     public static void LoadNextLevel()
     {
-        Debug.LogWarning("TODO: Load next level");
-        LoadScene("Main Menu");
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Level 1":
+                LoadScene("Level 2");
+                break;
+            case "Level 2":
+                LoadScene("Level 3");
+                break;
+            case "Level 3":
+                LoadScene("Level 4");
+                break;
+            case "Level 4":
+                LoadScene("Level 5");
+                break;
+            case "Level 5":
+                LoadScene("Main Menu");
+                break;
+        }
     }
     public static void LoadLatestLevel()
     {
