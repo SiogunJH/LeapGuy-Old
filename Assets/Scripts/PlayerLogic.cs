@@ -81,6 +81,10 @@ public class PlayerLogic : MonoBehaviour
                 jumpStrength += Time.deltaTime;
             }
         }
+        else
+        {
+            jumpStrength = 0.1f;
+        }
     }
 
     // Jump in predetermined direction, based on player Direction
@@ -140,7 +144,10 @@ public class PlayerLogic : MonoBehaviour
     }
 
     // On Triggers
-    void OnTriggerEnter2D(Collider2D other) { }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+    }
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Finish") && isOnGround && !hasFinished)
