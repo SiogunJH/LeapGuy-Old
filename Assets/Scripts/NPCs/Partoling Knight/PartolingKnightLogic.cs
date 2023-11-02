@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AudioManagerLib;
 
 public class PartolingKnightLogic : MonoBehaviour
 {
@@ -58,6 +59,7 @@ public class PartolingKnightLogic : MonoBehaviour
     {
         isAttacking = true;
         anim.SetBool("Is Attacking", isAttacking);
+        AudioManager.PlaySound("Bonk");
 
         if (tartget.transform.position.x < transform.position.x) // [TARGET] [PATROL KNIGHT]
         {

@@ -131,7 +131,7 @@ public class PlayerLogic : MonoBehaviour
     void OnBounce()
     {
         // Play wall bonk sound
-        AudioManager.PlaySound("Wall Bonk");
+        AudioManager.PlaySound("Wall Bounce");
     }
 
     void OnSlide()
