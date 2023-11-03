@@ -156,7 +156,7 @@ public class PlayerLogic : MonoBehaviour
             hasFinished = true;
 
             // Generate particles
-            goldenFountainGO.transform.position = new Vector2(transform.position.x, transform.position.y - 0.6f);
+            goldenFountainGO.transform.position = new Vector2(transform.position.x, transform.position.y - 0.7f);
             goldenFountain.Play();
 
             // Play sound

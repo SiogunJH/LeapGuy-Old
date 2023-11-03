@@ -8,6 +8,7 @@ TagManager:
   - Decors
   - Bounceable
   - Slideable
+  - Terrain Hitbox
   layers:
   - Default
   - TransparentFX
