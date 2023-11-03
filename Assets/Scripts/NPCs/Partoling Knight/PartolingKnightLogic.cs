@@ -74,24 +74,11 @@ public class PartolingKnightLogic : MonoBehaviour
 
     void ResumePatrol()
     {
-        //turn around
-        // if (facing == Direction.Right)
-        // {
-        //     facing = Direction.Left;
-        //     sr.flipX = true;
-        // }
-        // else
-        // {
-        //     facing = Direction.Right;
-        //     sr.flipX = false;
-        // }
-
-
         isAttacking = false;
         anim.SetBool("Is Attacking", isAttacking);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if (
             !isAttacking &&
