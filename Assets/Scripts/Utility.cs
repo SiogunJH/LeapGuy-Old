@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,10 @@ namespace UtilityLib
         {
             float multiplier = Mathf.Pow(10f, decimalPlaces);
             return Mathf.Round(value * multiplier) / multiplier;
+        }
+        public static bool SimilarTo(this float value1, float value2, float maximumDifference = 0.0001f)
+        {
+            return Math.Abs(value1 - value2) <= maximumDifference;
         }
     }
 }
