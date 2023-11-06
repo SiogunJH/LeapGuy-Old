@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "EndlessRunner.sln"
+    "dotnet.defaultSolution": "Jump Knight by JH.sln"
 }
