@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Terrain
+  - Standable
+  - Decors
+  - Bounceable
+  - Slideable
+  - Terrain Hitbox
   layers:
   - Default
   - TransparentFX
@@ -12,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Hitbox
   - 
   - 
   - 
