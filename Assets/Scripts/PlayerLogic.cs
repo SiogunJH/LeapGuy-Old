@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 using AudioManagerLib;
+using Unity.VisualScripting;
 
 public class PlayerLogic : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class PlayerLogic : MonoBehaviour
         hasFinished = false;
 
         Physics2D.gravity = new Vector2(0.00f, -20.00f);
+        //Application.targetFrameRate = (int)Screen.currentResolution.refreshRateRatio.value;
     }
 
     void Update()
