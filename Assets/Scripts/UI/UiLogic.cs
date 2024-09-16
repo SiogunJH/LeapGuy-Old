@@ -20,12 +20,6 @@ public class UiLogic : MonoBehaviour
                 LoadScene("Level 3");
                 break;
             case "Level 3":
-                LoadScene("Level 4");
-                break;
-            case "Level 4":
-                LoadScene("Level 5");
-                break;
-            case "Level 5":
                 LoadScene("Main Menu");
                 break;
         }
